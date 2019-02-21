@@ -1,0 +1,1 @@
+(princ "\nEmpty acaddoc.lsp")
