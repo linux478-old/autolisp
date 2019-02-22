@@ -5,4 +5,8 @@
            ""
            "multiple"
   )
+  (while (= (getvar "cmdactive") 1)
+    (command pause)
+  )
+  (princ)
 )
