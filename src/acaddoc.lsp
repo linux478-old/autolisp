@@ -1,6 +1,6 @@
 (princ "\nLoading acaddoc.lsp")
 
-(autoload "MP-Alias-All" (list
+(autoload "MP-Alias-C" (list
                            "C"
                          )
 )
