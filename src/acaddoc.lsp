@@ -17,6 +17,7 @@
                          )
 )
 (autoload "MP-Alias-RT" '("RT"))
+(autoload "MP-Alias-Z" '("Z"))
 (autoload "MP-OSnap-midOfPoint" '(
                                   "mpt2"
                                   "mpt4"
