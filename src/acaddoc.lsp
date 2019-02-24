@@ -4,6 +4,10 @@
 (autoload "MP-Alias-C" '("C"))         ;; copy with multiple mode
 (autoload "MP-Alias-CC" '("CC"))       ;; 2 point circle
 (autoload "MP-Alias-D" '("D"))         ;; measure distance
+(autoload "MP-Alias-MM" '(
+                          "MM"         ;; mirror command
+                         )
+)       
 (autoload "MP-Alias-RR" '(
                           "RR"         ;; Alias to rotate
                           "RR1"        ;; alias to rotate 90 
