@@ -21,6 +21,7 @@ MP-Alias-RR.lsp | RR1        |       | rotate command set at 90 degrees
 MP-Alias-RR.lsp | RR2        |       | rotate command set at 180 degrees
 MP-Alias-RR.lsp | RR3        |       | rotate command set at 270 degrees
 MP-Alias-RR.lsp | RR4        |       | rotate command set at 45 degrees
+MP-Alias-Z.lsp  | Z          |       | pline command
 vp-outline.lsp  | VP-OUTLINE |       | outline viewport in model space from paper space
                 
 ## Transparent Commands
