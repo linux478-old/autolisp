@@ -12,6 +12,12 @@
                           "RR4"        ;; alias to rotate 45
                          )
 )
-
-(autoload "MP-OSnap-midOfPoint" '("mpt2" "mpt4" "mpt5"))
+(autoload "MP-Alias-RT" '("RT"))
+(autoload "MP-OSnap-midOfPoint" '(
+                                  "mpt2"
+                                  "mpt4"
+                                  "mpt5"
+                                 )
+)
 (autoload "MP-OSnap-ContinuousPoints" '("from"))
+(autoload "../vendor/jtbworld.com/vp-outline" '("VP-OUTLINE"))

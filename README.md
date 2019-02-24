@@ -10,16 +10,17 @@ to control the AutoCAD application.
 
 ## User Commands
 
-File            | Command | Usage | Description
---------------- | ------- | ----- | -----------
-MP-Alias-C.lsp  | C       |       | copy command the multiple mode selected
-MP-Alias-CC.lsp | CC      |       | 2 point circle command
-MP-Alias-D.lsp  | D       |       | dist command
-MP-Alias-RR.lsp | RR      |       | rotate command
-MP-Alias-RR.lsp | RR1     |       | rotate command set at 90 degrees
-MP-Alias-RR.lsp | RR2     |       | rotate command set at 180 degrees
-MP-Alias-RR.lsp | RR3     |       | rotate command set at 270 degrees
-MP-Alias-RR.lsp | RR4     |       | rotate command set at 45 degrees
+File            | Command    | Usage | Description
+--------------- | -------    | ----- | -----------
+MP-Alias-C.lsp  | C          |       | copy command the multiple mode selected
+MP-Alias-CC.lsp | CC         |       | 2 point circle command
+MP-Alias-D.lsp  | D          |       | dist command
+MP-Alias-RR.lsp | RR         |       | rotate command
+MP-Alias-RR.lsp | RR1        |       | rotate command set at 90 degrees
+MP-Alias-RR.lsp | RR2        |       | rotate command set at 180 degrees
+MP-Alias-RR.lsp | RR3        |       | rotate command set at 270 degrees
+MP-Alias-RR.lsp | RR4        |       | rotate command set at 45 degrees
+vp-outline.lsp  | VP-OUTLINE |       | outline viewport in model space from paper space
                 
 ## Transparent Commands
 
