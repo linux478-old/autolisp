@@ -6,17 +6,43 @@
 ;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defun C:MM ()
-  (if 
-    (and
-      (setq #ss (ssget))
-      (setq #pt1 (getpoint "\nClick first point on the mirror line: "))
-      (setq #pt2 (getpoint #pt1 "\nClick second point on the mirror line: "))
-      (setq #erase (if (setq #erase (member (getstring "\nErase selection set? [Y/N] <N>: ") '("YES" "Y" "y" "yes"))) (car #erase) "No"))
-    )
-    (MP:Command->Mirror #ss #pt1 #pt2 (if (= #erase "No") nil #erase)) 
-  )
+  (command "mirror")
   (princ)
 )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Command:     MM1
+;;; Description: mirror horizontally from a point
+;;; Return:      NONE
+;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun c:MM1 ()
+  (if
+    (and
+      (setq ss (ssget))
+      (setq pt (getpoint "\nClick point on mirror line: "))
+    )
+    (MP:Command->Mirror ss pt (list (+ 1 (car pt)) (cadr pt)) nil)
+  )
+  (princ)
+) 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;
+;;; Command:     MM2
+;;; Description: mirror vertically from a point
+;;; Return:      NONE
+;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun c:MM2 ()
+  (if
+    (and
+      (setq ss (ssget))
+      (setq pt (getpoint "\nClick point on mirror line: "))
+    )
+    (MP:Command->Mirror ss pt (list (car pt)(+ 1 (cadr pt))) nil)
+  )
+  (princ)
+) 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;
 ;;; Function:    MP:Command->Mirror

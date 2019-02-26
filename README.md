@@ -16,6 +16,8 @@ MP-Alias-C.lsp  | C          |       | copy command the multiple mode selected
 MP-Alias-CC.lsp | CC         |       | 2 point circle command
 MP-Alias-D.lsp  | D          |       | dist command
 MP-Alias-MM.lsp | MM         |       | mirror command
+MP-Alias-MM.lsp | MM1        |       | mirror horizontally from a point
+MP-Alias-MM.lsp | MM2        |       | mirror vertically from a point
 MP-Alias-RR.lsp | RR         |       | rotate command
 MP-Alias-RR.lsp | RR1        |       | rotate command set at 90 degrees
 MP-Alias-RR.lsp | RR2        |       | rotate command set at 180 degrees

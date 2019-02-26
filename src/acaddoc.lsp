@@ -6,6 +6,8 @@
 (autoload "MP-Alias-D" '("D"))         ;; measure distance
 (autoload "MP-Alias-MM" '(
                           "MM"         ;; mirror command
+                          "MM1"        ;; mirror horizontally from a point
+                          "MM2"        ;; mirror vertically from a point
                          )
 )       
 (autoload "MP-Alias-RR" '(
