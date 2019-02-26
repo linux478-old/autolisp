@@ -7,8 +7,8 @@
 		 )
 	   )
      )
-  '(c:mpt2 c:mpt4 c:mpt5)
-  '(2 4 5)
+  '(c:mpt2 c:mpt3 c:mpt4 c:mpt5)
+  '(2 3 4 5)
 )
 (defun MP:OSnap->MidOfPoints ( dem / pt1 pt2)
    (if (and

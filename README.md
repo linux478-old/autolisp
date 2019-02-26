@@ -32,6 +32,7 @@ File                          | Command | Usage | Description
 ----------------------------- | ------- | ----- | -----------
 MP-OSnap-ContinuousPoints.lsp | FROM    |       | keeps track of previous point
 MP-OSnap-MidOfPoints.lsp      | MPT2    |       | mid of 2 points
+MP-OSnap-MidOfPoints.lsp      | MPT3    |       | mid of 1/3 points
 MP-OSnap-MidOfPoints.lsp      | MPT4    |       | mid of 1/4 points
 MP-OSnap-MidOfPoints.lsp      | MPT5    |       | mid of 1/5 points
 
