@@ -17,20 +17,13 @@
           (setq pt2 (getpoint pt1 "\nSecond point: "))
        )
        (command 
-          "_non" 
-	  (if (= dem 2)
-		  (list
-		     (/ (+ (car pt1) (car pt2)) dem)
-		     (/ (+ (cadr pt1) (cadr pt2)) dem)
-		     (/ (+ (caddr pt1) (caddr pt2)) dem)
-		  )
-		  (list
-		     (+ (/ (- (car pt2) (car pt1)) dem) (car pt1))
-                     (+ (/ (- (cadr pt2) (cadr pt1)) dem) (cadr pt1))
-        	     (+ (/ (- (caddr pt2) (caddr pt1)) dem) (caddr pt1))
-		  )
-		  )
-       )
+          "_non"
+	    (list
+	      (+ (/ (- (car pt2) (car pt1)) dem) (car pt1))
+              (+ (/ (- (cadr pt2) (cadr pt1)) dem) (cadr pt1))
+              (+ (/ (- (caddr pt2) (caddr pt1)) dem) (caddr pt1))
+            )
+	)
    )
    (princ)
 )
