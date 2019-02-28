@@ -5,9 +5,9 @@
 (autoload "MP-Alias-CC" '("CC"))       ;; 2 point circle
 (autoload "MP-Alias-D" '("D"))         ;; measure distance
 (autoload "MP-Alias-MM" '(
-                          "MM"         ;; mirror command
-                          "MM1"        ;; mirror horizontally from a point
-                          "MM2"        ;; mirror vertically from a point
+                          "MM"         ;; mirror selected object(s)
+                          "MM1"        ;; mirror selected object(s) horizontally from a point
+                          "MM2"        ;; mirror selectec object(s) vertically from a point
                          )
 )       
 (autoload "MP-Alias-RR" '(
