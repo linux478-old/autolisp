@@ -1,0 +1,3 @@
+[submodule "users/mphillips"]
+	path = users/mphillips
+	url = git@github.com:linux478/autocad-settings.git
