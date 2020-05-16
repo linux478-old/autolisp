@@ -1,6 +1,0 @@
-[submodule "users/mphillips"]
-	path = users/mphillips
-	url = git@github.com:linux478/autocad-settings.git
-[submodule "usr/mphillips"]
-	path = usr/mphillips
-	url = git@github.com:linux478/autocad-settings.git
