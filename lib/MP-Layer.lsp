@@ -68,6 +68,14 @@
   )
 );defun
 (princ ".")
+(defun MP:Layer->setSuffix (oLayer iName)
+  (subst
+    (cons 2 (strcat (MP:Layer->getName oLayer) iName))
+    (assoc 2 oLayer)
+    oLayer
+  )
+);defun
+(princ ".")
 (defun MP:Layer->toggleFrozen (oLayer)
   (subst
     (cons 70 (boole 6 (cdr (assoc 70 oLayer)) 1) )
