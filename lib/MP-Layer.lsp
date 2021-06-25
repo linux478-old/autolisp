@@ -68,6 +68,14 @@
   )
 );defun
 (princ ".")
+(defun MP:Layer->toggleOn (oLayer)
+  (subst
+    (cons 62 (* (cdr (assoc 70 oLayer)) -1))
+    (assoc 62 oLayer)
+    oLayer
+  )
+);defun
+(princ ".")
 (defun MP:_Layer->query (oLayer iName aValue)
   (= (boole 1 (cdr (assoc iName oLayer)) aValue) aValue)
 )
