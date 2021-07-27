@@ -57,6 +57,24 @@
     )
   )
 ); defun
+(princ ".")
+(defun MP:Layout->getName ()
+  (getvar 'ctab)
+); defun
+(princ ".")
+(defun MP:Layout->loop (fun)
+  (mapcar '(lambda (x)
+             (setvar 'ctab x)
+             (eval (list fun))
+           )
+    (layoutlist)
+  )
+); defun
+(princ ".")
+(defun MP:Layout->check ()
+  (MP:Layout->setFocus)
+  (MP:Layout->setViewportLayers)
+); defun
 (princ " [Done]")
 (princ)
 
