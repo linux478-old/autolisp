@@ -95,6 +95,15 @@
   )
   (LM:ss->ent oSS)
 )
+(princ ".")
+(defun MP:SS->titleBlock ()
+  (ssget "all" (list
+                 '(0 . "insert")
+                 '(10 0 0 0)
+                 (cons 410 (MP:Layout->getName))
+               )
+  )
+) 
 (princ " [Done]")
 (princ)
 
